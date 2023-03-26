@@ -2,7 +2,7 @@ package com.github.linzhengen.infrastructure.user
 
 import com.github.linzhengen.domain.user.User
 import com.github.linzhengen.domain.user.UserRepository
-import com.github.linzhengen.infrastructure.user.persistence.mysql.UserDao
+import com.github.linzhengen.infrastructure.user.persistence.UserDao
 import java.util.*
 
 class UserRepositoryImpl : UserRepository {

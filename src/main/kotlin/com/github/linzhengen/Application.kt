@@ -1,6 +1,6 @@
 package com.github.linzhengen
 
-import com.github.linzhengen.infrastructure.user.persistence.mysql.Migration
+import com.github.linzhengen.infrastructure.user.persistence.Migration
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*

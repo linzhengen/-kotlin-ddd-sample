@@ -1,4 +1,4 @@
-package com.github.linzhengen.infrastructure.user.persistence.mysql
+package com.github.linzhengen.infrastructure.user.persistence
 
 import com.github.linzhengen.domain.user.User
 import org.jetbrains.exposed.dao.id.UUIDTable
@@ -16,7 +16,7 @@ object Users : UUIDTable("users") {
 
 object UserDao {
     fun create(name: String) = transaction {
-        Users.insertAndGetId { it[this.name] = name }.value
+        Users.insertAndGetId { it[Users.name] = name }.value
     }
 
     fun delete(id: UUID) = transaction {

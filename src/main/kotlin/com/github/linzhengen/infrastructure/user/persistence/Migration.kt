@@ -1,4 +1,4 @@
-package com.github.linzhengen.infrastructure.user.persistence.mysql
+package com.github.linzhengen.infrastructure.user.persistence
 
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.Schema
