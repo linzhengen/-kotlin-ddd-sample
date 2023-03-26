@@ -24,7 +24,7 @@ object UserDao {
     }
 
     fun find(id: UUID) = transaction {
-        Users.select { Users.id eq id }.singleOrNull()?.let {
+        Users.select { Users.id eq id }.single().let {
             User(it[Users.id].value, it[Users.name])
         }
     }
