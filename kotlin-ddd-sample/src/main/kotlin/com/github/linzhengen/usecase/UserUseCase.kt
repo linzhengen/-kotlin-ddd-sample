@@ -9,7 +9,8 @@ class UserUseCase(private val userRepository: UserRepository) {
         return userRepository.create(name).id
     }
 
-    suspend fun findUser(id: UUID): User? {
-        return userRepository.findById(id)
+    suspend fun findUser(id: String): User? {
+        var uuid = UUID.fromString(id);
+        return userRepository.findById(uuid)
     }
 }
